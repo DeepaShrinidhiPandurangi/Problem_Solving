@@ -1,0 +1,111 @@
+Remove space in python string / strip space in python string : In this Tutorial we will learn how to remove or strip leading , trailing and duplicate spaces in python  with lstrip() , rstrip() and strip() Function with an example for each .
+
+objective:
+
+Remove (strip) space at the start of the string in Python
+Remove (strip) space at the end of the string in Python
+Remove (strip) white spaces from start and end of the string.
+Remove all the spaces in python
+Remove Duplicate Spaces in Python
+Let’s see the example on how to Remove space in python string / strip space in python string one by one.
+
+ 
+
+Remove Space at the start of the string in Python (Strip leading space in python):
+1
+2
+3
+4
+5
+## Remove the Starting Spaces in Python
+ 
+string1="    This is Test String to strip leading space"
+print string1
+print string1.lstrip()
+lstrip() function in the above example strips the leading space so the output will be
+
+‘    This is Test String to strip leading space’
+
+‘This is Test String to strip leading space’
+
+ 
+
+ 
+
+Remove Space at the end of the string in Python (Strip trailing space in python):
+1
+2
+3
+4
+5
+## Remove the Trailing or End Spaces in Python
+ 
+string2="This is Test String to strip trailing space     "
+print string2
+print string2.rstrip()
+rstrip() function in the above example strips the trailing space so the output will be
+
+‘This is Test String to strip trailing space     ‘
+
+‘This is Test String to strip trailing space’
+
+ 
+
+ 
+
+Remove Space at the Start and end of the string in Python (Strip trailing and trailing space in python):
+1
+2
+3
+4
+5
+## Remove the whiteSpaces from Beginning and end of the string in Python
+ 
+string3="    This is Test String to strip leading and trailing space      "
+print string3
+print string3.strip()
+strip() function in the above example strips, both leading and trailing space so the output will be
+
+‘    This is Test String to strip leading and trailing space      ‘       
+
+‘This is Test String to test leading and trailing space’
+
+ 
+
+Remove or strip all the spaces in python:
+1
+2
+3
+4
+5
+## Remove all the spaces in python
+ 
+string4="&nbsp;&nbsp;&nbsp; This is Test String to test all the spaces&nbsp; "
+print string4
+print string4.replace(" ", "")
+The above example removes all the spaces in python. So the output will be
+
+‘    This is Test String to test all the spaces  ‘
+
+‘ThisisTestStringtotestallthespaces’
+
+ 
+
+Remove or strip the duplicated space in python:
+1
+2
+3
+4
+5
+6
+# Remove the duplicated space in python
+ 
+import re
+string4="&nbsp;&nbsp;&nbsp; This&nbsp; is&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Test String&nbsp;&nbsp;&nbsp;&nbsp; to test&nbsp;&nbsp;&nbsp; duplicate spaces&nbsp; "
+print string4
+print re.sub(' +', ' ',string4)
+We will be using regular expression to remove the unnecessary duplicate spaces in python.
+sub() function: re.sub() function takes the string4 argument and replaces one or more space with single space as shown above so the output will be.
+‘    This  is      Test String     to test    duplicate spaces  ‘
+
+‘ This is Test String to test duplicate spaces ‘

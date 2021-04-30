@@ -1,0 +1,5 @@
+Important Reads
+https://docs.python.org/2.0/ref/strings.html
+
+Unicode and character encoding :
+https://realpython.com/python-encodings-guide/

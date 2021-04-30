@@ -1,0 +1,6 @@
+PS C:\Deepa\Computing\Python\Exercises\Rosalind\Python_Village> python INI2_Var_Arith.py
+enter the value of the side a of the triangle :3
+enter the value of the side b of the triangle :4
+the sqaure of the hypotenuse is 25
+the sqaureroot of the hypotenuse is 5
+PS C:\Deepa\Computing\Python\Exercises\Rosalind\Python_Village>

@@ -1,0 +1,20 @@
+Using indexes to specify substrings
+Substrings can be specified in Python using slice notations. Multiple strings or slices can be concatenated by simply adding them together.
+
+Note that Python doesn't include the final index in slices, to include it we have to add 1 to our final indexes.
+
+Pseudo code
+input_string = read from file
+output_string = input_string[a : b+1] + ' ' + input_string[c : d+1]
+print output_string
+
+Code:
+string = input("enter the string \n")
+a= int(input("a is : \n"))
+b= int(input("b is : \n"))
+c= int(input("c is : \n"))
+d= int(input("d is : \n"))
+print (string[a:b]+' '+string[c:d])
+
+## you can directly hard code numbers instead of a,b,c and d. Not a good practice though.
+## make sure string[a,b]-- a and b are integers.

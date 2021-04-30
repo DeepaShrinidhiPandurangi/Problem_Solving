@@ -1,0 +1,34 @@
+Dataset:
+r5NIipD8QhSrIOg6qwNI6ZVuJMRPXPEIG5dwsudStrepsilas7sanguinolentus2hNjdWmWQncTzqRxJ518s5861EVpB5pLR9QnjKwEzAWAK48UOT0hbZGKYvgIZ0Z7BiDiF856mRcTv7fKuUhDsVB87AXWS3aN9M5zCl2m.
+39 48 50 63
+
+eg1 :
+Output :PS C:\Deepa\Computing\Python\Exercises\Rosalind\Python_Village\3_Using_indices_to_specify_substrings> python substring.p
+y
+enter the string
+r5NIipD8QhSrIOg6qwNI6ZVuJMRPXPEIG5dwsudStrepsilas7sanguinolentus2hNjdWmWQncTzqRxJ518s5861EVpB5pLR9QnjKwEzAWAK48UOT0hbZGKYvgIZ0Z7BiDiF856mRcTv7fKuUhDsVB87AXWS3aN9M5zCl2m.
+a is :
+39
+b is :
+48
+c is :
+50
+d is :
+63
+Strepsilas sanguinolentus
+PS C:\Deepa\Computing\Python\Exercises\Rosalind\Python_Village\3_Using_indices_to_specify_substrings>
+
+eg 2.
+PS C:\Deepa\Computing\Python\Exercises\Rosalind\Python_Village\3_Using_indices_to_specify_substrings> python substring.p
+y
+enter the string
+HumptyDumptysatonawallHumptyDumptyhadagreatfallAlltheKingshorsesandalltheKingsmenCouldntputHumptyDumptyinhisplaceagain.
+a is :
+22
+b is :
+27
+c is :
+97
+d is :
+0102
+Humpty Dumpty

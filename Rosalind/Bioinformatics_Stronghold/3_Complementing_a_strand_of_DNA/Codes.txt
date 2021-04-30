@@ -1,0 +1,104 @@
+Code : 
+
+Algorithm idea Rosalind (Pseudo code):
+input S 
+reverse S 
+for i = 1 to length of S 
+     if S[i] = 'A' then S'[i] = 'T'
+     if S[i] = 'T' then S'[i] = 'A'
+     if S[i] = 'C' then S'[i] = 'G'
+     if S[i] = 'G' then S'[i] = 'C'
+
+print S'
+
+Method 1 (Shinu's method):
+
+a= input ("Enter the DNA :\n")
+for i in a:
+ if i == "A" or "C":
+  b=a.replace("A","S")
+  c=b.replace("C","P")
+ if i == "T" or "G":
+  d=c.replace("T","A")
+  e=d.replace("G","C")
+for i in e:
+ if i== "S" or i== "P":
+  f= e.replace("S","T")
+  g= f.replace("P","G")
+print("\n",g[::-1])
+
+
+Method 2 :
+
+str_a= input("enter the DNA string \n")
+str_rev = str_a[::-1]
+print('reverse_string is:\n',str_rev)
+index = 0
+print('reverse_complement is:')
+while index < len(str_rev):
+#    letter = str_a[index]
+#    print (letter.replace('A','T'))
+#    index = index + 1
+# end below prints the o/p in the same line after every iteration of loop
+# no need of string.replace as we are not handling a string, we have already fetched a letter using indexing.
+### while
+     (
+     condition
+     )
+## do not put index = index+1 in the indent level of while. it will execute every time and enter an infinite loop.
+eg.
+     while 
+      statment
+      else:
+       ()
+      elif:
+       ()
+      else:
+       if ():
+         ()
+      index = index+1
+
+##can use elif in the last block also, need not end with else
+
+
+
+ #wrong:
+     letter = str_rev[index]
+     if letter == 'A':
+        letter = letter.replace('A','T')
+        print(letter,end='')
+     elif letter == 'T':
+        letter = letter.replace('T','A')
+        print(letter,end='')
+     elif letter == 'C':
+        letter = letter.replace('C','G')
+        print(letter,end='')
+     else:
+        letter = letter.replace('G','C')
+        print(letter,end='')
+     index = index + 1
+
+#correct :
+while index < len(str_rev):
+     letter = str_rev[index]
+     if letter == 'A':
+        print('T'),end='')
+     elif letter == 'T':
+        print('A'),end='')
+     elif letter == 'C':
+        print('G'),end='')
+     else:
+        print('C'),end='')
+     index = index + 1
+
+# last block can also be written as
+      else:
+        if letter == 'G':
+         print('C'),end='')
+     index = index + 1
+
+
+# Clever online code:
+st = "AAAACCCGGT"
+st = st.replace("A","t").replace("T","a").replace("G","c").replace("C","g").upper()[::-1]
+print(st)
