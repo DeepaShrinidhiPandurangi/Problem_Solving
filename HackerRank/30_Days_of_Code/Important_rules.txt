@@ -1,0 +1,18 @@
+# Imp points to remember 
+
+#Initialization
+see where you initialize the variables.
+If you want the variables to reinitialize every time before some operation, do so.
+eg. Strings problem. Here do not initialize before the first for. It has to reset every time after the new string is read. If you do it after reading t,the 
+output acts on all the input strings instead of acting on them one by one.
+t = int(input("enter the number of strings"))
+for i in range(0,t):
+    s = input("enter the strings")
+	s1=""
+    s2=""
+    for i in range(0,len(s)):
+        if i%2 == 0:
+            s1= s1+s[i]
+        else:
+            s2= s2+s[i]
+    print(s1," ",s2)
